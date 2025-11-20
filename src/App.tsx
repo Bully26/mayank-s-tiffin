@@ -8,10 +8,10 @@ function App() {
   return (
     <div className="w-screen min-h-screen bg-blue-200">
       <NavBar />
-      <Plan></Plan>
+      {/* <Plan></Plan> */}
       {/* <Final/> */}
       {/* <HomePage /> */}
-      {/* <Order/> */}
+      <Order/>
       
     </div>
   );

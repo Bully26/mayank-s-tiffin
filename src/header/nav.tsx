@@ -1,31 +1,23 @@
-function navBar (){
 
-    const classfornav = "bg-red-300 flex justify-center items-center max-h-full";
+const some  = (
+ <div className="sticky top-0 z-50 bg-white shadow-sm">
+  <div className="flex items-center justify-center px-4 py-3 relative">
 
-    return (
-      <div className="flex flex-row flex-12 justify-around  bg-orange-500 sticky top-0 z-50">
-       <div >
-       <div className="w-full flex justify-center">
-        logo
-       </div>
-        <div>
-            Ghar ka khana
-        </div>
-       </div>
-       <div className={classfornav}>
-        Menu
-       </div>
-       <div className="bg-red-300 flex justify-center items-center max-h-full">
-          <span>
-            Place Order
-          </span>
-       </div>
-       
-      </div>
+    <div className="flex gap-6 text-gray-700 font-medium text-sm">
+      <a href="/home" className="text-orange-500 transition">Home</a>
+      <a href="/menu" className="hover:text-orange-500 transition">Menu</a>
+      <a href="/weekly-plan" className="hover:text-orange-500 transition">Weekly Plan</a>
+      <a href="/order" className="hover:text-orange-500 transition">Order</a>
+    </div>
 
-    );
+    
+
+  </div>
+</div>
 
 
+)
+
+export default function MobileNavbar() {
+  return some;
 }
-
-export default navBar;
